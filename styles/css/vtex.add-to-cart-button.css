@@ -1,0 +1,6 @@
+.buttonText--product-button {
+  color: #303030;
+}
+.product-button :global(.vtex-button) {
+  border: none;
+}

@@ -1,0 +1,33 @@
+{
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 350,
+      "images": [
+        {
+          "src": "assets/img/BANNER1.png",
+          "mobileImage": "assets/img/BANNER1.png"
+        },
+        {
+          "src": "assets/img/BANNER2.png",
+          "mobileImage": "assets/img/BANNER2.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "slider-layout#tab": {
+    "children": ["sticky-layout#tab"]
+  }
+}

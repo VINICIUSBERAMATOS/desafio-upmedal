@@ -1,0 +1,291 @@
+{
+  /////// Promoções
+
+  "search-result-layout.customQuery#promocao": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "skusFilter": "ALL_AVAILABLE",
+        // "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "queryField": "20,24",
+        "mapField": "c,c"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#promocao"]
+  },
+  "search-result-layout.desktop#promocao": {
+    "children": [
+      /* "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle", */
+      /* "flex-layout.row#result" */
+      "search-content#promocao"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+  "search-content#promocao": {
+    "blocks": ["gallery#promocao", "not-found"]
+  },
+
+  "gallery#promocao": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#promocao",
+      "GridSummary": "product-summary.shelf#promocao"
+    }
+  },
+  "product-summary.shelf#promocao": {
+    "children": [
+      "product-summary-name",
+      /* "product-images#promocao", */
+      "product-summary-image#promocao",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image#promocao": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      "showNavegationArrows": true,
+      "thumbnailsOrientation": "vertical",
+      "displayMode": "carousel",
+      "showPaginationDots": true
+    }
+  },
+
+  //////
+
+  //////
+
+  ////// Corinthians
+  "search-result-layout.customQuery#curica": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "skusFilter": "ALL_AVAILABLE",
+        /*"simulationBehavior": "skip", */
+        "maxItemsPerPage": 8,
+        "queryField": "Corinthians",
+        "mapField": "ft"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#curica"]
+  },
+  "search-result-layout.desktop#curica": {
+    "children": [
+      /* "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle", */
+      /* "flex-layout.row#result" */
+      "search-content#curica"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+  "search-content#curica": {
+    "blocks": ["gallery#curica", "not-found"]
+  },
+
+  "gallery#curica": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#curica",
+      "GridSummary": "product-summary.shelf#curica"
+    }
+  },
+  "product-summary.shelf#curica": {
+    "children": [
+      "product-summary-name",
+      /* "product-images#curica", */
+      "product-summary-image#curica",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image#curica": {
+    "props": {
+      /* "showNavegationArrows": true */
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "blockClass": "product-button"
+    }
+  },
+  /////
+  /////
+  //////// Palmeiras
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "queryField": "Palmeiras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#palmeiras"]
+  },
+  "search-result-layout.desktop#palmeiras": {
+    "children": ["search-content#palmeiras"],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content#palmeiras": {
+    "blocks": ["gallery#palmeiras", "not-found"]
+  },
+
+  "gallery#palmeiras": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#palmeiras",
+      "GridSummary": "product-summary.shelf#palmeiras"
+    }
+  },
+  "product-summary.shelf#palmeiras": {
+    "children": [
+      "product-summary-name",
+      /* "product-images#palmeiras", */
+      "product-summary-image#palmeiras",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image#palmeiras": {
+    "props": {
+      "showNavegationArrows": true
+    }
+  },
+
+  ///////
+  ///////
+  //////// Signos
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "queryField": "20,21",
+        "mapField": "c,c"
+      }
+    },
+    "blocks": ["search-result-layout.desktop#signos"]
+  },
+  "search-result-layout.desktop#signos": {
+    "children": [
+      /* "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle", */
+      /* "flex-layout.row#result" */
+      "search-content#signos"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+  "search-content#signos": {
+    "blocks": ["gallery#signos", "not-found"]
+  },
+  "gallery#signos": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#signos",
+      "GridSummary": "product-summary.shelf#signos"
+    }
+  },
+  "product-summary.shelf#signos": {
+    "children": [
+      "product-summary-name",
+      "product-images#signos",
+      /* "product-summary-image#signos", */
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "add-to-cart-button"
+    ]
+  },
+  "product-images#signos": {
+    "props": {
+      "showNavegationArrows": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.flexRowContent--flex-footer {
+  background-color: #424242;
+  z-index: 1;
+  position: absolute fixed;
+  margin-bottom: 0;
+}
+.flexRowContent--flex-header {
+  background-color: #212121;
+}
+.flexRowContent {
+  border: 2px;
+  border-color: #59ff00;
+}

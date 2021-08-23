@@ -1,0 +1,172 @@
+{
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "list-context.image-list#demo",
+      "tab-content#home"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  "sticky-layout#tab": {
+    "props": {
+      "position": "top",
+      "blockClass": "sticky-tab"
+    },
+    "children": ["flex-layout.row#desktop2"]
+  },
+  "flex-layout.row#desktop2": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "rowGap": true
+    },
+    "children": ["tab-list#home"]
+  },
+  //Itens do tab-layout
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2",
+      "tab-list.item#3",
+      "tab-list.item#4",
+      "tab-list.item#5",
+      "tab-list.item#6",
+      "tab-list.item#7",
+      "tab-list.item#8"
+      /*       "tab-list.item#9",
+      "tab-list.item#10" */
+    ]
+  },
+
+  "tab-list.item#1": {
+    "props": {
+      "label": "PROMOÇÃO",
+      "tabId": "promocao",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "label": "CORINTHIANS",
+      "tabId": "curica",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#3": {
+    "props": {
+      "label": "PALMEIRAS",
+      "tabId": "porco",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#4": {
+    "props": {
+      "label": "SIGNOS",
+      "tabId": "signos",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#5": {
+    "props": {
+      "label": "DIVERSOS",
+      "tabId": "diversos",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#6": {
+    "props": {
+      "label": "7MARAVILHAS",
+      "tabId": "7maravilhas",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#7": {
+    "props": {
+      "label": "GUERREIROS",
+      "tabId": "guerreiros",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#8": {
+    "props": {
+      "label": "ÁLBUM1",
+      "tabId": "album1",
+      "defaultActiveTab": false
+    }
+  },
+  // "tab-list.item#9": {
+  //   "props": {
+  //     "label": "ÁLBUM2",
+  //     "tabId": "album2",
+  //     "defaultActiveTab": false
+  //   }
+  // },
+  // "tab-list.item#10": {
+  //   "props": {
+  //     "label": "ÁLBUM3",
+  //     "tabId": "album3",
+  //     "defaultActiveTab": false
+  //   }
+  // },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2",
+      "tab-content.item#3",
+      "tab-content.item#4"
+      /*"tab-content.item#5",
+      "tab-content.item#6",
+      "tab-content.item#7",
+      "tab-content.item#8",
+      "tab-content.item#9",
+      "tab-content.item#10" */
+    ]
+  },
+  "tab-content.item#1": {
+    "children": ["search-result-layout.customQuery#promocao"],
+    "props": {
+      "tabId": "promocao",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-content.item#2": {
+    "children": ["search-result-layout.customQuery#curica"],
+    "props": {
+      "tabId": "curica",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-content.item#3": {
+    "children": ["search-result-layout.customQuery#palmeiras"],
+    "props": {
+      "tabId": "porco",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#4": {
+    "children": ["search-result-layout.customQuery#signos"],
+    "props": {
+      "tabId": "signos",
+      "defaultActiveTab": true
+    }
+  }
+  // "rich-text#2": {
+  //   "props": {
+  //     "text": "Teste Curica",
+  //     "textPosition": "CENTER",
+  //     "font": "t-heading-3"
+  //   }
+  // }
+}

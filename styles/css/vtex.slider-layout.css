@@ -1,0 +1,55 @@
+.sliderLayoutContainer {
+  width: 100%;
+}
+.sliderLayoutContainer--carousel {
+  background: transparent;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+.sliderLayoutContainer--tabs {
+  width: 100%;
+  margin-top: 0;
+  padding: 0%;
+}
+.imageElement {
+  background-color: #303030;
+}
+.imageElement--carousel {
+  border-radius: 20px;
+  justify-content: start;
+}
+.slideChildrenContainer--carousel {
+  background-color: #303030;
+  margin-top: 55px;
+}
+.paginationDot--carousel--isActive {
+  background-color: #59ff00;
+}
+.paginationDotsContainer--carousel {
+  position: absolute;
+  margin-bottom: -30px;
+}
+
+.sliderRightArrow {
+  margin-top: 500px;
+}
+
+.sliderRightArrow--carousel {
+  position: absolute;
+  margin-top: 450px;
+  color: #fff;
+  width: 70px;
+}
+.sliderLeftArrow--carousel {
+  position: absolute;
+  margin-top: 450px;
+  color: #fff;
+  width: 70px;
+}
+
+.caretIcon {
+  background-color: #303030;
+  width: 15px;
+}

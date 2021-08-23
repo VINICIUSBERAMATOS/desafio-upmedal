@@ -1,0 +1,7 @@
+{
+  "list-context.product-list#demo1": {
+    "allowed": ["product-summary"],
+    "composition": "children",
+    "component": "ProductSummaryList"
+  }
+}

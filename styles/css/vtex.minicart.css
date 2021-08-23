@@ -1,0 +1,8 @@
+.minicart-product-item {
+  background-color: rgb(141, 13, 13);
+}
+.minicartProductListContainer--minicart-product-item {
+  background-color: rosybrown;
+  border: 1px;
+  border-color: royalblue;
+}

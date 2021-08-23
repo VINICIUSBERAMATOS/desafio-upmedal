@@ -1,0 +1,47 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "footer-layout.desktop": {
+    "children": ["sticky-layout#desktopfooter"]
+  },
+  "sticky-layout#desktopfooter": {
+    "props": {
+      "blockClass": "sticky-tab"
+    },
+    "children": ["flex-layout.row#footer"]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "flex-footer"
+    },
+    "children": [
+      "login",
+      "rich-text#desafios",
+      "minicart.v2",
+      "rich-text#suporte"
+    ]
+  },
+  "rich-text#desafios": {
+    "props": {
+      "text": "DESAFIOS",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#suporte": {
+    "props": {
+      "text": "SUPORTE"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
+  }
+}
